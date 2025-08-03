@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio, built for the PLP Academy Portfolio Challenge. This project showcases my skills in frontend development, my background, and the projects I'm passionate about.
 
-**Live Demo:** [**INSERT YOUR GITHUB PAGES LINK HERE**]
+**Live Demo: **https://hssamuel.github.io/my-portfolio**
 
 ---
 
@@ -40,11 +40,11 @@ This portfolio was built from the ground up using only **HTML and CSS**, focusin
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[Your-Username]/[Your-Repo-Name].git
+    git clone https://github.com/HSSamuel/my-portfolio
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd [Your-Repo-Name]
+    cd my-portfolio
     ```
 3.  **Open `index.html` in your browser:**
     * You can simply double-click the `index.html` file to open it locally.
