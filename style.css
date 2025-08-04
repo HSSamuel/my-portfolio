@@ -10,35 +10,27 @@
   --bg-light: #eaf2f8;
   --navbar-blue-dark: #08083d;
   --navbar-blue-light: #172a45;
-
-  /* ADJUSTMENT: Text colors now reflect the navbar color */
   --text-dark: var(--navbar-blue-dark);
   --text-secondary: var(--navbar-blue-dark);
-
-  /* Text Colors for Dark Backgrounds */
   --text-light: #f0f4f8;
-
-  /* Accent Colors */
-  --accent-primary: #3498db;
-  --accent-secondary: #e74c3c;
-
-  /* Gradient */
+  --accent-primary: #097ac5;
+  --accent-secondary: #861407;
   --gradient: linear-gradient(
     90deg,
     var(--navbar-blue-dark),
-    var(--navbar-blue-light)
+    var(--navbar-blue-light),
+    var(--accent-secondary),
+    var(--accent-primary)
   );
 
-  /* Other Variables */
   --card-bg: #ffffff;
-  --border-color: #d6eaf8;
+  --border-color: var(--navbar-blue-dark);
   --shadow: 0 4px 15px rgba(44, 62, 80, 0.1);
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-light);
-  /* The default text color is now the dark navy blue */
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
@@ -61,7 +53,6 @@ section {
 h1,
 h2,
 h3 {
-  /* Headings will now use the dark navy blue */
   color: var(--text-dark);
 }
 
@@ -208,8 +199,8 @@ nav {
 
 .cta-button.secondary {
   background: transparent;
-  border: 2px solid var(--accent-primary);
-  color: var(--accent-primary);
+  border: 2px solid var(--navbar-blue-dark);
+  color: var(--navbar-blue-dark);
 }
 .cta-button.secondary:hover {
   background-color: rgba(52, 152, 219, 0.1);
@@ -260,27 +251,30 @@ nav {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 
-#interests li {
+.interest-item {
   background-color: var(--navbar-blue-dark);
   padding: 15px 20px;
   margin-bottom: 10px;
   border-left: 4px solid var(--accent-primary);
   border-radius: 4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: var(--shadow);
-  color: var(--text-light); /* Text inside remains light */
+  color: var(--text-light);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#interests li:hover {
+.interest-item:hover {
   transform: translateY(-3px);
 }
 
-#interests strong {
-  color: #ffffff; /* Strong text inside remains white */
+.interest-item strong {
+  display: block;
+  color: #ffffff;
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 /* --- 6. Skills Section --- */
